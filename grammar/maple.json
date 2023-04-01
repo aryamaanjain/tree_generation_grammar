@@ -1,0 +1,44 @@
+{
+    "start": "s",
+    "stop": [],
+    "initial_width": [0.18, 0.22],
+    "max_recursion_depth": 5,
+
+    "grammar" : [
+        {
+            "input": "s",
+            "output": [["a"]],
+            "likelihood": [1],
+        },
+        {
+            "input": "a",
+            "output": [["a", "a", "a", "a"], ["a", "a", "a"], ["a", "a"]],
+            "likelihood": [1, 2, 1]
+        },   
+    ],
+
+    "geometries": [
+        {
+            "input": "s",
+            "output": "a",
+            "angle": [[0,20], [0,0], [0,360]],
+            "length": [0.75,2],
+            "reduce_length": 1.0,
+            "reduce_width_begin": 1.0,
+            "reduce_width_end": 0.80,
+            "reduce_angle": [1.0, 1.0, 1.0],
+            "curve": [0.8, 1.2]
+        },
+        {
+            "input": "a",
+            "output": "a",
+            "angle": [[0,70], [0,0], [0,360]],
+            "length": [2,3],
+            "reduce_length": 0.9,
+            "reduce_width_begin": 1.0,
+            "reduce_width_end": 0.50,
+            "reduce_angle": [0.90, 1.0, 1.0],
+            "curve": [1.8, 2.2]
+        },
+    ]
+}

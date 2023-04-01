@@ -1,0 +1,108 @@
+{
+    "start": "s",
+    "stop": ["t"],
+    "initial_width": [0.38, 0.42],
+    "max_recursion_depth": 7,
+
+    "grammar" : [
+        {
+            "input": "s",
+            "output": [["a"]],
+            "likelihood": [1],
+        },
+        {
+            "input": "a",
+            "output": [["a", "b1", "b1", "b1", "b1", "b2", "b2", "b2"], ["a", "b1", "b1", "b1", "b1", "b2", "b2"]],
+            "likelihood": [1, 1]
+        },
+        {
+            "input": "b1",
+            "output": [["t"]],
+            "likelihood": [1]
+        },
+        {
+            "input": "b2",
+            "output": [["c1", "c2"]],
+            "likelihood": [1]
+        },
+        {
+            "input": "c1",
+            "output": [["t"]],
+            "likelihood": [1]
+        },
+        {
+            "input": "c2",
+            "output": [["t"]],
+            "likelihood": [1]
+        }
+    ],
+
+    "geometries": [
+        {
+            "input": "s",
+            "output": "a",
+            "angle": [[0,2], [0,0], [0,360]],
+            "length": [8,8],
+            "reduce_length": 1.0,
+            "reduce_width_begin": 1.0,
+            "reduce_width_end": 0.90,
+            "reduce_angle": [1.0, 1.0, 1.0],
+            "curve": [0.8, 1.0]
+        },
+        {
+            "input": "a",
+            "output": "a",
+            "angle": [[0,2], [0,0], [0,360]],
+            "length": [2,3],
+            "reduce_length": 0.95,
+            "reduce_width_begin": 1.0,
+            "reduce_width_end": 0.85,
+            "reduce_angle": [1.0, 1.0, 1.0],
+            "curve": [0.8, 1.0]
+        },
+        {
+            "input": "a",
+            "output": "b1",
+            "angle": [[70,80], [0,0], [0,360]],
+            "length": [6,7],
+            "reduce_length": 0.99,
+            "reduce_width_begin": 0.4,
+            "reduce_width_end": 0.2,
+            "reduce_angle": [0.97, 1.0, 1.0],
+            "curve": [0.8, 1.0]
+        },
+        {
+            "input": "a",
+            "output": "b2",
+            "angle": [[70,80], [0,0], [0,360]],
+            "length": [4,5],
+            "reduce_length": 0.99,
+            "reduce_width_begin": 0.4,
+            "reduce_width_end": 0.2,
+            "reduce_angle": [0.97, 1.0, 1.0],
+            "curve": [0.8, 1.0]
+        },
+        {
+            "input": "b2",
+            "output": "c1",
+            "angle": [[2,-2], [2,-2], [15,30]],
+            "length": [2,3],
+            "reduce_length": 0.99,
+            "reduce_width_begin": 1.0,
+            "reduce_width_end": 0.5,
+            "reduce_angle": [1.0, 1.0, 1.0],
+            "curve": [0.8, 1.0]
+        },
+        {
+            "input": "b2",
+            "output": "c2",
+            "angle": [[2,-2], [2,-2], [-15,-30]],
+            "length": [2,3],
+            "reduce_length": 0.99,
+            "reduce_width_begin": 1.0,
+            "reduce_width_end": 0.5,
+            "reduce_angle": [1.0, 1.0, 1.0],
+            "curve": [0.8, 1.0]
+        }
+    ]
+}
