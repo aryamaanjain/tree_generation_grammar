@@ -2,7 +2,9 @@
 
 This is the official implementation of the paper `Automated tree generation using grammar & particle system`.
 
-![](figures/forest.gif)
+<p align="center">
+  <img src="figures/forest_mid.png">
+</p>
 
 
 ## Steps to generate the tree
@@ -21,16 +23,23 @@ This is the official implementation of the paper `Automated tree generation usin
 8. For the bark texture:
    1. Go to the shading tab and `Add > Texture > Image Texture`.
    2. Connect `Color` in `Image Texture` to `Base Color` in `Principled BSDF`.
-   3. Click `Open` in `Image Texture` and select the bark texture.
+   3. Click `Open` in `Image Texture` and select the bark texture. The image below illustrates the nodes.
 
-   ![](figures/shading.png)
-9. You might observe that the leaves are at the center of the barks. To correct it, select the main leaf plane on the bottom of the first trunk of the tree. Change its origin to the starting tip of the leaf. You can do this by `selecting Cursor from left panel and place it at the tip of the leaf > select the leaf plane object at the bottom of the trunk > right click > Set origin > Origin to 3D cursor.` This would make sure that the leaves start from the tips rather than their center from the barks.
+<p align="center">
+  <img src="figures/shading.png">
+</p>
 
-![](figures/leaf_setup.png)
+9. You might observe that the leaves are at the center of the barks. To correct it, select the main leaf plane on the bottom of the first trunk of the tree. Change its origin to the starting tip of the leaf. You can do this by `selecting Cursor from left panel and place it at the tip of the leaf > select the leaf plane object at the bottom of the trunk > right click > Set origin > Origin to 3D cursor.` This would make sure that the leaves start from the tips rather than their center from the barks. The image below illustrates the leaf to be edited and the placement of the cursor.
+
+<p align="center">
+  <img src="figures/leaf_setup.png">
+</p>
 
 You should have something like this:
 
-![](figures/screenshot.png)
+<p align="center">
+  <img src="figures/screenshot.png">
+</p>
 
 To generate a different tree, replace the value of the `parameters` variable in line 115 with parameters of a different tree present in the `grammar` folder.
 
