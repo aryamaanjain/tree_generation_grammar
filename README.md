@@ -2,14 +2,14 @@
 
 This is the official implementation of the paper `Automated tree generation using grammar & particle system`.
 
-* grammar folder: This folder contains a library of grammar files that are used for generating trees of Indian and Western species.
-* Grammar-Trees-main.zip: This file is a Blender plugin that enables the generation of trees within Blender.
-* code.py: This file contains the code that can be directly utilized in the Blender scripting tab for tree generation.
-
 <p align="center">
   <img src="figures/forest_mid.png">
 </p>
 
+
+* `grammar` folder: This folder contains a library of grammar files that are used for generating trees of Indian and Western species.
+* `Grammar-Trees-main.zip`: This file is a Blender plugin that enables the generation of trees within Blender.
+* `code.py`: This file contains the code that can be directly utilized in the Blender scripting tab for tree generation.
 
 ## Steps to generate the tree
 
